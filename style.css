@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "header header header header "
+    "aside  aside article article  "
+    "aside aside article article  ";
+
+
+}
+body {
+    background-color: white;
+    
+   
+    
+    
+}
+
+header {
+grid-area: header;
+background-color: orange;
+width: 1440px;
+height: 56px;
+padding: 0px, 24px, 0px, 24px;
+justify-content: space-between;
+
+}
+#menu {
+    width: 120px;
+    height: 30px;
+    top: 18px;
+    left: 40px;
+    position: absolute;
+
+}
+#pesquisa {
+    position: absolute;
+    width: 536px;
+    height: 40px;
+    top: 8px;
+    left: 345px;
+    border: 1px solid rgba(204, 204, 204, 1);
+    border-radius: 25px;
+
+}
+
+.header-itens #fotousuario {
+   
+    
+        position: absolute;
+     
+        top: 10px;
+ 
+        right: 20px;
+      
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+    }
+    
+    #sininho {
+        position: absolute;
+       
+        top: 13px;
+     
+        right: 75px;
+      
+        width: 24px;
+        height: 24px;
+    }
+    
+    #video {
+        position: absolute;
+      
+        top: 13px;
+       
+        right: 120px;
+       
+        width: 24px;
+        height: 24px;
+    }
+
+aside {
+grid-area: aside;
+width: 230px;
+height:968px;
+top: 56px;
+padding: 24px;
+
+background-color: lawngreen;
+list-style: none;
+
+}
+aside ul {
+    list-style: none;
+}
+       
+      
+      
+    
+    aside .listamenu .imagemmenu {
+list-style: none;
+width: 24px;
+height: 24px;
+margin-bottom: 15%;
+
+
+
+
+    }
+
+    .listamenu span {
+        text-align:justify;
+        margin-left: 18px;
+        margin-bottom: 15%;
+        
+       
+ 
+       
+    }
+    article ul {
+        display: list-item grid;
+        list-style: none;
+
+    }
+    
+    article {
+        display: grid;
+        grid-area: article;
+        background-color: aqua;
+        border: solid 2px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr); /* Definindo 3 linhas */
+        gap: 10px;
+    }
+    
+    .imglateral0 {
+        grid-row: 1 / 2; /* Primeira linha */
+        grid-column: 1 / 2; /* Primeira coluna */
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    
+    .imglateral1 {
+        grid-row: 2 / 3; /* Segunda linha */
+        grid-column: 2 / 3; /* Segunda coluna */
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    
+
+
+
